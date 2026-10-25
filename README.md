@@ -1,5 +1,4 @@
 # Lab-Experiments
-My C Practice programs
 Adabala Venkata Sai Vismitha 
 CSE-A
 PPS COURSE ACTIVITY 1
