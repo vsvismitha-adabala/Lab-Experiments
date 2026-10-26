@@ -1,24 +1,26 @@
 #include <stdio.h>
 int main(){
 int unit;
-float amount ,sur_charge,total_amount;
+float amount ;
 printf("Enter units consumed");
 scanf("%d",&unit);
-if(unit<=50){
-amount = unit*0.50;
+if(unit>=0){
+if(unit<=100){
+amount = unit*1.50;
 }
-else if(unit<=150){
-amount = (50*0.50)+((unit-50)*0.75);
+else if(unit<=200 && unit>=101){
+amount = unit*2.5;
 }
-else if(unit<=250){
-amount = (50*0.50)+(100*0.75)+((unit-150)*1);
+else if(unit<=500 && unit>=201){
+amount = unit*4.0;
 }
-else{
-amount = (50*0.50)+(100*0.75)+(100*1)+((unit-250)*1.25);
+else if(unit>=500){
+amount = unit*6.0;
 }
-sur_charge=amount*0.20;
-total_amount=amount+sur_charge;
-printf("%f",total_amount);
+printf("Bill amount is %f",amount);
+}
+else 
+printf("Invalid input");
 return 0;
 }
 
