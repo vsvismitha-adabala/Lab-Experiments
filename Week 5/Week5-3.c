@@ -12,7 +12,7 @@ r2 =(-b-sqrt(d))/(2*a);
   }
 else if(d == 0){
 r1 =(-b)/(2*a);
-  printf("Roots are rwal and equal i.e %.2f and %.2f",r1,r1); 
+  printf("Roots are real and equal i.e %.2f and %.2f",r1,r1); 
   }    
 else
   printf("Roots are imaginary");
